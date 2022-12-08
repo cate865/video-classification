@@ -14,5 +14,13 @@
         {{form.file()}}
         {{form.submit()}}
     </form>
+    <form action = "http://localhost:5000/predict" method = "POST" 
+         enctype = "multipart/form-data">
+         <label>Upload Video</label>
+         <input type = "file" name = "file" />
+         <label>Enter Query</label>
+         <input type="text" name="query" id="query">
+         <input type = "submit"/>
+    </form>
 </body>
 </html>
